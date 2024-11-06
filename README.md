@@ -2,6 +2,9 @@
 
 [![Docs](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliahealth.org/ARules.jl/stable) [![Build Status](https://travis-ci.org/JuliaHealth/ARules.jl.svg?branch=master)](https://travis-ci.org/JuliaHealth/ARules.jl) [![codecov.io](http://codecov.io/github/JuliaHealth/ARules.jl/coverage.svg?branch=master)](http://codecov.io/github/JuliaHealth/ARules.jl?branch=master) [![DOI](https://zenodo.org/badge/95671564.svg)](https://zenodo.org/badge/latestdoi/95671564)
 
+This package is not actively maintained.
+For data mining in Julia, see <https://github.com/JaredSchwartz/RuleMiner.jl>.
+
 ## 1. Installation
 ```julia
 julia> Pkg.add("https://github.com/bcbi/ARules.jl")
@@ -48,10 +51,3 @@ julia> rules = apriori(transactions, supp = 0.01, conf = 0.1, maxlen = 6)
 ```
 
 
-## 4. Note
-This package is under active development. And as such, there are still many performance and feature improvements to be made. In the case of performance, while the package will handle many applications quite well, once the number of "items" in "transactions" becomes large, there is a marked performance penalty.
-
-## 5. To Do
-- Implement additional frequent-itemset generation algorithms (e.g., eclat, fp-growth)
-- Add functionality for requiring rules to contain a certain item (or items)
-- Improve performance

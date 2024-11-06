@@ -2,6 +2,9 @@
 
 A Julia package for mining Association Rules.
 
+This package is not actively maintained.
+For data mining in Julia, see <https://github.com/JaredSchwartz/RuleMiner.jl>.
+
 ```@contents
 pages = [
     "Guide" => "usage.md",
